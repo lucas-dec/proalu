@@ -509,11 +509,19 @@ ul.nav-links a:hover::after {
     height: 200px;
   }
 }
+
 @media (min-width: 768px) {
   .header .video-container video {
     height: 100vh;
     width: auto;
     overflow: hidden;
+  }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .header .video-container video {
+    height: auto;
+    width: 100%;
   }
 }
 
@@ -658,5 +666,20 @@ ul.nav-links a:hover::after {
 
   .footer img {
     width: 200px;
+  }
+}
+
+@media (min-width: 960px) and (orientation: landscape) {
+  .header .video-container video {
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header .video-container video {
+    height: auto;
+    width: 100%;
   }
 }
